@@ -12,7 +12,7 @@ public class TC001 {
 
 		//Launch the Browser
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--disabled notifications");
+		options.addArguments("--disable-notifications");
 		ChromeDriver driver = new ChromeDriver(options);
 		//Load the Url "https://www.pvrcinemas.com/"
 		driver.get("https://www.pvrcinemas.com/");
