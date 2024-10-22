@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	
+  <test thread-count="5" name="Test">
+	  <parameter name="url" value="http://leaftaps.com/opentaps/"></parameter>
+	  <parameter name="userName" value="DemoCSR"></parameter>
+	  <parameter name="passWord" value="crmsfa"></parameter>
+	  
+    <classes>
+      <class name="staticParameterization.CreateLeadStaticPara"/>
+      <class name="staticParameterization.EditLeadStaticPara"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
